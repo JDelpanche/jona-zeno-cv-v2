@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jona zeno delplanche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #fff7e6;
+            --accent: #d4af37;
+            --muted: #8faac8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: lowercase;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            padding: 10vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 15vh;
+            text-align: left;
+        }
+
+        h1 {
+            font-family: "Cinzel", serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            color: var(--muted);
+            font-size: 0.9rem;
+            letter-spacing: 0.05rem;
+        }
+
+        section {
+            margin-bottom: 10vh;
+        }
+
+        h2 {
+            font-family: "Cinzel", serif;
+            font-size: 1.2rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .item {
+            margin-bottom: 4rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            color: var(--accent);
+            font-weight: 400;
+        }
+
+        .date {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .org {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        p {
+            max-width: 600px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 10vh;
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-align: left;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.3s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>jona zeno delplanche</h1>
+            <div class="contact">
+                brussels, belgium &nbsp; | &nbsp; 
+                <a href="mailto:jona.delplanche@gmail.com">jona.delplanche@gmail.com</a> &nbsp; | &nbsp;
+                <a href="https://github.com/jdelpanche">github.com/jdelpanche</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>selected experience</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">lead developer</span>
+                    <span class="date">2024 — present</span>
+                </div>
+                <span class="org">poke labs dev hub</span>
+                <p>architecting modular mcp integrations and internal tooling for the interaction company of california. focusing on robust api ecosystems and typescript-driven developer experiences.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">founder</span>
+                    <span class="date">2023 — present</span>
+                </div>
+                <span class="org">urba</span>
+                <p>engineering minimalist urban technology solutions. developing systems that prioritize aesthetic clarity and functional essentialism within city infrastructure.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">r&d lead | project aer</span>
+                    <span class="date">2025 — present</span>
+                </div>
+                <span class="org">schuman metro station (stib/mivb)</span>
+                <p>designing algae-based carbon sequestration and air purification units for subterranean transit environments. pioneering biological infrastructure for brussels mobility.</p>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">project architect | a-pod & project pip</span>
+                    <span class="date">2024 — 2025</span>
+                </div>
+                <p>developing modular housing prototypes and localized infrastructure pilots aimed at high-efficiency urban living.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">b.sc. design and production technology</span>
+                    <span class="date">expected 2027</span>
+                </div>
+                <span class="org">thomas more university of applied sciences</span>
+                <p>focusing on sustainable manufacturing, system design, and the intersection of hardware with biological systems.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>competencies</h2>
+            <div class="item">
+                <ul>
+                    <li>elo 2847 chess — elite-tier strategic analysis and computational thinking</li>
+                    <li>typescript, javascript, node.js, api architecture</li>
+                    <li>urban infrastructure design & biological air purification</li>
+                    <li>minimalist product development & systems engineering</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            born august 6, 2005. currently based in brussels.
+        </footer>
+    </main>
+</body>
+</html>
