@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jona zeno delplanche</title>
+    <title>jona zeno delplanche | cv</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
             --text: #fff7e6;
             --accent: #d4af37;
             --muted: #8faac8;
+            --divider: rgba(212, 175, 55, 0.2);
         }
 
         * {
@@ -27,21 +28,23 @@
             color: var(--text);
             font-family: "Inter", sans-serif;
             font-weight: 300;
-            line-height: 1.8;
-            padding: 10vw;
+            line-height: 1.6;
+            padding: 5vw;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         main {
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
         }
 
         header {
-            margin-bottom: 15vh;
+            margin-bottom: 8vh;
             text-align: left;
+            border-bottom: 1px solid var(--divider);
+            padding-bottom: 2rem;
         }
 
         h1 {
@@ -49,43 +52,62 @@
             font-size: 2.5rem;
             letter-spacing: 0.2rem;
             color: var(--accent);
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .contact {
             color: var(--muted);
             font-size: 0.9rem;
             letter-spacing: 0.05rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         section {
-            margin-bottom: 10vh;
+            margin-bottom: 6vh;
+            clear: both;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
         }
 
         h2 {
             font-family: "Cinzel", serif;
-            font-size: 1.2rem;
+            font-size: 1rem;
             letter-spacing: 0.15rem;
-            margin-bottom: 3rem;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            padding-bottom: 0.5rem;
-            display: inline-block;
+            color: var(--accent);
+            padding-top: 0.5rem;
+        }
+
+        .content-block {
+            border-top: 1px solid var(--divider);
+            padding-top: 0.5rem;
         }
 
         .item {
-            margin-bottom: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .title {
-            color: var(--accent);
+            color: var(--text);
             font-weight: 400;
+            font-size: 1.05rem;
         }
 
         .date {
@@ -95,23 +117,27 @@
 
         .org {
             font-style: italic;
+            color: var(--accent);
             margin-bottom: 0.5rem;
             display: block;
+            font-size: 0.95rem;
         }
 
         p {
-            max-width: 600px;
+            max-width: 650px;
+            font-size: 0.95rem;
+            color: rgba(255, 247, 230, 0.9);
         }
 
         ul {
             list-style: none;
-            margin-top: 1rem;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 1.2rem;
+            font-size: 0.95rem;
         }
 
         li::before {
@@ -127,7 +153,8 @@
             font-size: 0.8rem;
             text-align: left;
             width: 100%;
-            max-width: 800px;
+            border-top: 1px solid var(--divider);
+            padding-top: 2rem;
         }
 
         a {
@@ -140,6 +167,21 @@
         a:hover {
             border-bottom: 1px solid var(--accent);
         }
+
+        @media (max-width: 768px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            h2 {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+            .content-block {
+                border-top: 1px solid var(--divider);
+                padding-top: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -147,77 +189,102 @@
         <header>
             <h1>jona zeno delplanche</h1>
             <div class="contact">
-                brussels, belgium &nbsp; | &nbsp; 
-                <a href="mailto:jona.delplanche@gmail.com">jona.delplanche@gmail.com</a> &nbsp; | &nbsp;
+                <span>brussels, belgium</span>
+                <span>|</span>
+                <a href="mailto:jona.delplanche@gmail.com">jona.delplanche@gmail.com</a>
+                <span>|</span>
+                <a href="https://delplanche.com">delplanche.com</a>
+                <span>|</span>
                 <a href="https://github.com/jdelpanche">github.com/jdelpanche</a>
             </div>
         </header>
 
-        <section>
-            <h2>selected experience</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <span class="title">lead developer</span>
-                    <span class="date">2024 — present</span>
-                </div>
-                <span class="org">poke labs dev hub</span>
-                <p>architecting modular mcp integrations and internal tooling for the interaction company of california. focusing on robust api ecosystems and typescript-driven developer experiences.</p>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <span class="title">founder</span>
-                    <span class="date">2023 — present</span>
-                </div>
-                <span class="org">urba</span>
-                <p>engineering minimalist urban technology solutions. developing systems that prioritize aesthetic clarity and functional essentialism within city infrastructure.</p>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <span class="title">r&d lead | project aer</span>
-                    <span class="date">2025 — present</span>
-                </div>
-                <span class="org">schuman metro station (stib/mivb)</span>
-                <p>designing algae-based carbon sequestration and air purification units for subterranean transit environments. pioneering biological infrastructure for brussels mobility.</p>
-            </div>
-            
-            <div class="item">
-                <div class="item-header">
-                    <span class="title">project architect | a-pod & project pip</span>
-                    <span class="date">2024 — 2025</span>
-                </div>
-                <p>developing modular housing prototypes and localized infrastructure pilots aimed at high-efficiency urban living.</p>
+        <section class="section-grid">
+            <h2>introductie</h2>
+            <div class="content-block">
+                <p>analytische denker met een scherp oog voor detail en een passie voor minimalistisch design en systeemtechniek. gefocust op het snijvlak van technologie, architectuur en duurzame stedelijke ontwikkeling.</p>
             </div>
         </section>
 
-        <section>
-            <h2>education</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="title">b.sc. design and production technology</span>
-                    <span class="date">expected 2027</span>
+        <section class="section-grid">
+            <h2>ervaring</h2>
+            <div class="content-block">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="title">lead developer</span>
+                        <span class="date">2024 — heden</span>
+                    </div>
+                    <span class="org">poke labs dev hub</span>
+                    <p>architectuur van modulaire mcp-integraties en interne tooling. focus op robuuste api-ecosystemen en typescript-gestuurde developer experiences.</p>
                 </div>
-                <span class="org">thomas more university of applied sciences</span>
-                <p>focusing on sustainable manufacturing, system design, and the intersection of hardware with biological systems.</p>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="title">oprichter</span>
+                        <span class="date">2023 — heden</span>
+                    </div>
+                    <span class="org">urba</span>
+                    <p>engineering van minimalistische stedelijke technologische oplossingen. ontwikkeling van systemen die esthetische helderheid en functioneel essentialisme prioriteren.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="title">r&d lead | project aer</span>
+                        <span class="date">2025 — heden</span>
+                    </div>
+                    <span class="org">schuman metro station (stib/mivb)</span>
+                    <p>ontwerp van op algen gebaseerde koolstofopvang- en luchtzuiveringsunits voor ondergrondse transitomgevingen.</p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>competencies</h2>
-            <div class="item">
+        <section class="section-grid">
+            <h2>onderwijs</h2>
+            <div class="content-block">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="title">b.sc. ontwerp- en productietechnologie</span>
+                        <span class="date">verwacht 2027</span>
+                    </div>
+                    <span class="org">thomas more hogeschool</span>
+                    <p>focus op duurzame productie, systeemontwerp en de intersectie van hardware met biologische systemen.</p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="title">secundair onderwijs</span>
+                        <span class="date">2021 — 2025</span>
+                    </div>
+                    <span class="org">koninklijk instituut woluwe</span>
+                    <p>diploma opvoeding en begeleiding (t-stroom) | getuigschrift maatschappij en welzijn.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-grid">
+            <h2>competenties</h2>
+            <div class="content-block">
                 <ul>
-                    <li>elo 2847 chess — elite-tier strategic analysis and computational thinking</li>
-                    <li>typescript, javascript, node.js, api architecture</li>
-                    <li>urban infrastructure design & biological air purification</li>
-                    <li>minimalist product development & systems engineering</li>
+                    <li>elo 2847 schaken — strategische analyse op elite-niveau</li>
+                    <li>typescript, javascript, node.js, api architectuur</li>
+                    <li>stedelijk infrastructuurontwerp & biologische luchtzuivering</li>
+                    <li>minimalistische productontwikkeling & systems engineering</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-grid">
+            <h2>talen</h2>
+            <div class="content-block">
+                <ul>
+                    <li>nederlands — moedertaal</li>
+                    <li>engels — in ontwikkeling (vloeiend)</li>
+                    <li>frans — passief</li>
                 </ul>
             </div>
         </section>
 
         <footer>
-            born august 6, 2005. currently based in brussels.
+            geboren 6 augustus 2005. gevestigd in brussel.
         </footer>
     </main>
 </body>
